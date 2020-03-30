@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  position: relative;
+}
+
+.topnav #myLinks {
+    background-color: #000;
+    text-align: center;
+    display: none;
+}
+#myLinks a:hover{
+    background-color: #FFF;
+    color: #000;
+}
+.topnav a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+.topnav a.icon {
+    padding-top: 0;
+    padding-right: 10px;
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.active {
+  background-color: #000;
+  color: white;
+}
+
+h1{
+    text-align: center;
+    color: #000;
+}
+h3{
+    margin: 0;
+    padding: 10px;
+    float: right;
+    border: 1px solid black;
+}
+.a{
+    color: coral;
+    background-color: #000;
+}
+.b{
+    color: gray;
+    background-color: #efe;
+}
+.c{
+    color: black;
+    background-color: lightblue;
+}
+.box{
+    float: left;
+    margin: 5px;
+    padding: 0;
+    width: 32%;
+    border: 1px solid black;
+}
+p{
+    margin: 0;
+    padding: 40px;
+    background-color: darkslategray;
+    color: aliceblue;
+}
+.cont:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+    
+@media screen and (max-width: 992px) {
+    .box {
+        width: 48.5%;
+    }
+    #lkj{
+        width: 98.4%;
+        margin-right: 5px;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a.icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .box {
+        width: 100%;
+    }
+    .topnav a.icon{
+        display: block;
+    }
+}
